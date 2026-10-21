@@ -1,0 +1,27 @@
+{
+  "name": "octoparse",
+  "displayName": "Octoparse",
+  "version": "0.1.0",
+  "description": "Collect web data with Octoparse templates via MCP, then analyze it with Claude: reviews, products, stores and more.",
+  "author": {
+    "name": "Octoparse",
+    "url": "https://www.octoparse.com"
+  },
+  "homepage": "https://www.octoparse.com/docs",
+  "repository": "https://github.com/octoparse/octoparse-ai-recipes",
+  "license": "MIT",
+  "keywords": [
+    "web-scraping",
+    "octoparse",
+    "mcp",
+    "voc",
+    "reviews",
+    "amazon",
+    "google-maps",
+    "data-collection"
+  ],
+  "documentationUrl": "https://www.octoparse.com/docs",
+  "supportUrl": "https://www.octoparse.com/contact",
+  "privacyPolicyUrl": "https://www.octoparse.com/privacy-policy",
+  "termsOfServiceUrl": "https://www.octoparse.com/terms-and-conditions"
+}

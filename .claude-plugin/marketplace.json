@@ -1,0 +1,15 @@
+{
+  "name": "octoparse",
+  "description": "Octoparse plugins for AI agents: collect web data with Octoparse templates, then analyze it with Claude.",
+  "owner": {
+    "name": "Octoparse",
+    "url": "https://www.octoparse.com"
+  },
+  "plugins": [
+    {
+      "name": "octoparse",
+      "source": "./plugins/octoparse",
+      "description": "Run Octoparse scraping templates from Claude (Amazon, Google Maps and many more) and turn the results into VOC / market analysis."
+    }
+  ]
+}

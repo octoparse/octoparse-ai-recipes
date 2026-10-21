@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "octoparse": {
+      "type": "http",
+      "url": "https://mcp.octoparse.com"
+    }
+  }
+}
