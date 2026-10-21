@@ -62,7 +62,8 @@ codex mcp login octoparse
 
 ## リンク
 
-- 解説記事：[VOC分析とは？AIで口コミを収集・分析するやり方](https://www.octoparse.jp/blog/?utm_source=github&utm_medium=referral&utm_campaign=ai-recipes)
+- 解説記事：[VOC分析とは？AIで口コミを収集・分析するやり方](https://www.octoparse.jp/blog/voc-analysis-with-ai-reviews?utm_source=github&utm_medium=referral&utm_campaign=ai-recipes)
+- 解説記事：[AIスクレイピングのやり方｜Octoparse×Claude](https://www.octoparse.jp/blog/ai-scraping-with-octoparse-and-claude?utm_source=github&utm_medium=referral&utm_campaign=ai-recipes)
 - テンプレート一覧：https://www.octoparse.jp/template?utm_source=github&utm_medium=referral&utm_campaign=ai-recipes
 - 無料ダウンロード：https://www.octoparse.jp/download?utm_source=github&utm_medium=referral&utm_campaign=ai-recipes
 
