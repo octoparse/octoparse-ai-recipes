@@ -23,5 +23,6 @@
   "documentationUrl": "https://www.octoparse.com/docs",
   "supportUrl": "https://www.octoparse.com/contact",
   "privacyPolicyUrl": "https://www.octoparse.com/privacy-policy",
-  "termsOfServiceUrl": "https://www.octoparse.com/terms-and-conditions"
+  "termsOfServiceUrl": "https://www.octoparse.com/terms-and-conditions",
+  "icon": "./.claude-plugin/icon.png"
 }

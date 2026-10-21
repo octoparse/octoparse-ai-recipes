@@ -1,0 +1,35 @@
+# Archives GitHub traffic daily (GitHub keeps only 14 days).
+# Setup: create a fine-grained token with "Administration: read" on this repo,
+# save it as the repository secret TRAFFIC_TOKEN.
+name: Archive traffic
+on:
+  schedule:
+    - cron: "17 0 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: traffic-data
+      - name: Fetch traffic
+        env:
+          GH_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          d=$(date -u +%F)
+          mkdir -p traffic
+          for k in views clones popular/referrers popular/paths; do
+            gh api "repos/$REPO/traffic/$k" > "traffic/${d}_${k//\//_}.json"
+          done
+          gh api "repos/$REPO" --jq '{date: now|todate, stars: .stargazers_count, forks: .forks_count, watchers: .subscribers_count}' > "traffic/${d}_repo.json"
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add traffic
+          git commit -m "traffic $(date -u +%F)" || exit 0
+          git push

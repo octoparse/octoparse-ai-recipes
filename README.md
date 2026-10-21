@@ -62,8 +62,8 @@ After installing, ask your agent:
 
 ## Links
 
-- Octoparse MCP docs: https://www.octoparse.com/docs
-- Templates: https://www.octoparse.com/template
+- Octoparse MCP docs: https://www.octoparse.com/docs?utm_source=github&utm_medium=referral&utm_campaign=ai-recipes
+- Templates: https://www.octoparse.com/template?utm_source=github&utm_medium=referral&utm_campaign=ai-recipes
 
 Collect only public data and follow each website's terms of use.
 
